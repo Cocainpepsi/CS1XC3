@@ -1,0 +1,16 @@
+mv : Item Newplace move things in the world
+add Lockername :add a spell to your locker if you learned it
+man spellname : reminds you how spell works
+cd ~ : go back home
+grep PHRASE ITEM : let elf help you search items
+touch ITEM : create something
+exit : exit the game permanently
+help :Type "man COMMAND" if you forget how to use a command.
+rm : remove something
+cp [ITEM_TO_COPY] ../[NEW_ITEM_NAME] :cast spells on items that you don't currently see
+password=IHTFP
+pwd: tell you where you are
+ls: tell you whats your surrounding
+less ITEM: interact with the item
+tellme: tell you the combination for the roon in MIT
+mkdir: create a directory

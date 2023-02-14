@@ -1,0 +1,50 @@
+#!/bin/bash
+WDIR="$1"
+cd "${WDIR}"
+let num=$#
+j=0;
+
+if [ $num -gt 3 ] ; then
+  if [ -f "excess.txt" ];then
+   rm excess.txt
+   touch  excess.txt
+   else
+   touch  excess.txt
+   fi
+  for i in $*
+  do
+    j=`expr $j + 1`; 
+    if [ $j -gt 3 ] ; then
+      echo $i >> excess.txt
+    fi
+  done
+else
+  
+if [ $num -eq 3 ] ; then
+  file1="$3"
+fi
+if [ "$2" = 1 ] ; then
+	if ! [ -f "file1.txt" ] ; then
+   touch file1.txt
+   echo "${USER}" > $file1.txt 
+   fi
+   
+elif [ "$2" = 2 ] ; then
+	if [ ! -d "backup" ] ; then
+   mkdir backup
+   cp file1.txt backup
+   else
+   cp file1.txt backup
+   fi
+
+
+elif [ "$2" = 3 ] ; then
+	if [  -f "backup/$file1.txt" ] ; then
+   cp backup/$file1.txt ../
+   rm backup/$file1.txt
+   fi
+fi
+fi
+
+echo "Finished"
+

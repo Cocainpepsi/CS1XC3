@@ -1,0 +1,5 @@
+top.c:2:10: fatal error: lab6part4.h: No such file or directory
+    2 | #include "lab6part4.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+./top: error while loading shared libraries: libLab6Part5.so: cannot open shared object file: No such file or directory

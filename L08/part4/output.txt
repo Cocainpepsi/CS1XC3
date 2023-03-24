@@ -1,0 +1,33 @@
+Checking worst.c ...
+worst.c:15:1: style: Incrementing a variable of type 'bool' with postfix operator++ is deprecated by the C++ Standard. You should assign it the value 'true' instead. [incrementboolean]
+flag++;
+^
+worst.c:7:7: error: Array 'arr[10]' accessed at index 15, which is out of bounds. [arrayIndexOutOfBounds]
+if(arr[15] ==1){
+      ^
+worst.c:9:15: error: Array 'arr[10]' accessed at index 15, which is out of bounds. [arrayIndexOutOfBounds]
+} else if (arr[15] ==1){
+              ^
+worst.c:9:20: style: Expression is always false because 'else if' condition matches previous condition at line 7. [multiCondition]
+} else if (arr[15] ==1){
+                   ^
+worst.c:13:10: error: Division by zero. [zerodiv]
+num = num/0;
+         ^
+worst.c:4:5: style: Variable 'arr' can be declared with const [constVariable]
+int arr[10]={0};
+    ^
+worst.c:15:1: error: Uninitialized variable: flag [uninitvar]
+flag++;
+^
+worst.c:13:5: style: Variable 'num' is assigned a value that is never used. [unreadVariable]
+num = num/0;
+    ^
+worst.c:15:5: style: Variable 'flag' is assigned a value that is never used. [unreadVariable]
+flag++;
+    ^
+worst.c:5:6: style: Variable 'flag' is not assigned a value. [unassignedVariable]
+bool flag;
+     ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+

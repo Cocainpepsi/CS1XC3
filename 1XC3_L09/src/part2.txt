@@ -1,0 +1,15 @@
+\begin{center}
+		\begin{tabular}{ |l|c| } 
+			\hline
+			Freedom is the freedom to say that & $2+2=4$  \\ 
+			\hline
+			Quadratic Equation & $\frac{-b\pm \sqrt{b^2 - 4ac}}{2a}$  \\ 
+			\hline
+			Integration by parts & $\int udv = uv - \int v du$ \\ 
+			\hline
+			Fourier Transform & $\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2 \pi ix \xi } dx$ \\ 
+			\hline
+			Modus Ponens & $P \to Q , P \vdash Q$ \\ 
+			\hline
+		\end{tabular}
+	\end{center}

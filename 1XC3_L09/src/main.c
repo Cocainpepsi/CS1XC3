@@ -1,5 +1,5 @@
 /** @file main.c
- * @author Student
+ * @author Xingao Wu
  * @date 31/3/2023
  * @brief The main codes of the project 
 */ 

@@ -1,5 +1,5 @@
 /** @file course.h
- * @author Student
+ * @author Xingao Wu
  * @date 31/3/2023
  * @brief The header file for course class
 */ 

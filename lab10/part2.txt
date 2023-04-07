@@ -1,0 +1,20 @@
+1.find -type f -name '*.tex'
+2.find -name "*[^Template].tex"
+3.find -type f -name "*.tex" | wc -l
+4.find -type f \( -name \*.toc -o -name \*.pdf -o -name \*.tex \)
+5.find ./SLIDES/Topic\ [^1-6]*\/ -type f  \( -name \*.pdf \)
+6.find . -type f -name '*~' -delete
+7.find . -type f -name '*#' -delete
+8.find -type f \( -name "??????.png" -o -name "??????.jpg" -o -name "??????.bmp" -o -name "?????.webp" \) >> goodfiles.txt
+   
+9.find -type f -name *.log -exec cat {} + >> allTheLogs.log 
+
+10. find -type f -name "*.aux" -print | while read filename; do      echo "${filename}";      head 10 "${filename}"; done
+
+11.find -iname "*.sh" -exec bash -c 'chmod +x "$0"' {} \;
+
+12.find -type f -name "* and *" -print | while read filename; do      echo "${filename}";      head 10 "${filename}" >> allheads.txt; done    
+
+13.cp *.{jpg,png,bmp,webp} ./image_backup/
+14.cat filesname.txt
+15.

@@ -1,0 +1,10 @@
+1. grep -R --include="*.tex" "\includegraphics"
+2.
+3. grep -R --include="*.*" "arbitrary\|bitwidth\|pointer" 
+4. grep -R --include="*S*.tex" "to be" 
+5. grep -R --include="*.*" "begin{itemize}" -A 1 
+6. 
+7.
+8. grep -R --include="*.*" "if (" 
+9.
+10.grep -R --include="*.*" " + \| - \| * \| / " 

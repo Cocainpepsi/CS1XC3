@@ -1,0 +1,10 @@
+1. find -type f -name "*.txt" -print0 | xargs -0 sed -i 's/backwards/forwards/g'
+2. find -type f -name "*.tex" -print0 | xargs -0 sed -i 's/\includegraphics//g'
+3. find -type f -name "*.*" -print0 | xargs -0 sed -i 's/\begin{itemize}/\begin{enumerate}/g'
+4.
+5.
+6. find -type f -name "*.log" -print0 | xargs -0 sed '15,18d' 
+7.
+8.
+9.
+10.
